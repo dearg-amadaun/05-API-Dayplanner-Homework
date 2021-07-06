@@ -32,10 +32,8 @@ else if (document.getElementById('col-md-1 hour') > currentHour) {
 //Save Button listeners and local storage
 //btn saveBtn col-md-1
 
-const buttonElement = document.getElementById('btn saveBtn col-md-1');
+const button = document.querySelector('btn saveBtn col-md-1');
 
-buttonElement.addEventListener('click', function (event) {
-  thing(save text to memory);
+button.addEventListener('click', event => {
+  button.textContent = `Click count: ${event.detail}`;
 });
-
-
