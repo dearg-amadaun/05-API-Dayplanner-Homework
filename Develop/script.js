@@ -30,3 +30,12 @@ else if (document.getElementById('col-md-1 hour') > currentHour) {
 //if (currentHour is NOW) then (box color = RED (css .present)) else if (currentHour is PAST) then (box color = GREY (css. past)) else if (currentHour is FUTURE) then (box color = GREEN (css .future))
 
 //Save Button listeners and local storage
+//btn saveBtn col-md-1
+
+const buttonElement = document.getElementById('btn saveBtn col-md-1');
+
+buttonElement.addEventListener('click', function (event) {
+  thing(save text to memory);
+});
+
+
