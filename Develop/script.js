@@ -33,7 +33,7 @@ $(".hour").filter(function() {
 //Need to check box hours against current hour
 
 
-/* Doesn't work
+/* Doesn't work syntax probably
 if (document.getElementById('col-md-1 hour') < currentHour) {
     $('col-md-1 hour').addclass('past');
 }
