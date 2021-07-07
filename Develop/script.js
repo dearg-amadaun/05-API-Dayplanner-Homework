@@ -40,11 +40,9 @@ const button = $('.saveBtn');
 
 
 button.on('click', function() {
-  //button.textContent = `Click count: ${event.detail}`;
   var value = $(this).siblings('.description').val()
   var time = $(this).parent().attr('id')
   console.log($(this))
-  //console.log(event.target)
   console.log(value, time)
 
   localStorage.setItem(time, value);
