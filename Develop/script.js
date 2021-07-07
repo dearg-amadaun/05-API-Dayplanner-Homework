@@ -1,3 +1,5 @@
+$(document).ready(function () {})
+
 //Current time and date
 var currentDate = moment().format('MMMM Do YYYY');
 $('#currentDay').html(currentDate)
@@ -32,19 +34,20 @@ console.log(currentHour)
 
 //Save Button listeners and local storage
 //btn saveBtn col-md-1
-
+const timeBlock = $('.time-block')
+console.log(timeBlock)
 const button = $('.saveBtn');
 
 
-button.on('click', () => {
+button.on('click', function() {
   //button.textContent = `Click count: ${event.detail}`;
-  var value = $(this).siblings('description').val()
+  var value = $(this).siblings('.description').val()
   var time = $(this).parent().attr('id')
   console.log($(this))
   //console.log(event.target)
   console.log(value, time)
 
-  
+  localStorage.setItem(time, value);
 });
 
 
