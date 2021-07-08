@@ -2,31 +2,41 @@ $(document).ready(function () {})
 
 //Current time and date
 var currentDate = moment().format('MMMM Do YYYY');
-$('#currentDay').html(currentDate)
-console.log(currentDate)
+$('#currentDay').html(currentDate);
+console.log(currentDate);
 
 //Current hour
-var currentHour = moment().format('h');
-console.log(currentHour)
+var currentHour = moment().format('H');
+console.log(currentHour);
 
 
 //Need loop to check all boxes?
 //Need to check box hours against current hour
+//$( ".description" ).css( "border", "3px solid red" );
+//$( ".description" ).css( "border", "3px solid red" );
+// var rowHour = $(".timeblock");
+// console.log(rowHour)
+  
+if (currentHour < '.col-md-1 hour') {
+    $( ".description" ).addClass( "past" );
+    $( ".description" ).removeClass( "present" );
+    $( ".description" ).removeClass( "future" );
+    
+  } else if (currentHour === '.col-md-1 hour') {
+    $( ".description" ).addClass( "present" );
+    $( ".description" ).removeClass( "past" );
+    $( ".description" ).removeClass( "future" );
+    
+  }else if (currentHour > '.col-md-1 hour') {
+    $( ".description" ).addClass( "future" );
+    $( ".description" ).removeClass( "present" );
+    $( ".description" ).removeClass( "past" );
+    
+  };
 
-
-// Doesn't work syntax probably bad, feel like I'm close
-//Create variables for the time blocks?
-// if (document.getElementById('col-md-1 hour') < currentHour) {
-//     $('col-md-1 hour').addclass('past');
-// }
-
-// else if (document.getElementById('col-md-1 hour') === currentHour) {
-//     $('col-md-1 hour').addclass('present');
-// }
-
-// else if (document.getElementById('col-md-1 hour') > currentHour) {
-//     $('col-md-1 hour').addclass('future');
-// }
+// $( ".description" ).addClass( "past" );
+// $( ".description" ).addClass( "present" );
+// $( ".description" ).addClass( "future" );
 
 
 //Colors and names already provided in style sheet
