@@ -1,6 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-![workday scheduler](https://user-images.githubusercontent.com/83721789/125011618-ce5d2a00-e036-11eb-8be1-cafb918a2b79.jpg)
+![dayplanner ](https://user-images.githubusercontent.com/83721789/125012211-d49fd600-e037-11eb-8389-09d138e657bd.jpg)
+
 https://dearg-amadaun.github.io/05-API-Dayplanner-Homework/
 
 A simple day planner with empty fields for adding your own notes or scehduling for the day. Your notes can be saved by clicking the save buttons on the end of the columns.
