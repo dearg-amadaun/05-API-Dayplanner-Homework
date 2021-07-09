@@ -5,18 +5,17 @@ var currentDate = moment().format('MMMM Do YYYY');
 $('#currentDay').html(currentDate);
 console.log(currentDate);
 
-//Current hour
-var currentHour = moment().format('H');
-console.log(currentHour);
 
 
 //Need loop to check all boxes?
 //Need to check box hours against current hour
 //$( ".description" ).css( "border", "3px solid red" );
-//$( ".description" ).css( "border", "3px solid red" );
 // var rowHour = $(".timeblock");
-// console.log(rowHour)
-  
+
+//Current hour
+var currentHour = moment().format('H');
+console.log(currentHour);
+
 if (currentHour < '.col-md-1 hour') {
     $( ".description" ).addClass( "past" );
     $( ".description" ).removeClass( "present" );
@@ -27,12 +26,12 @@ if (currentHour < '.col-md-1 hour') {
     $( ".description" ).removeClass( "past" );
     $( ".description" ).removeClass( "future" );
     
-  }else if (currentHour > '.col-md-1 hour') {
+  } else if (currentHour > '.col-md-1 hour') {
     $( ".description" ).addClass( "future" );
     $( ".description" ).removeClass( "present" );
     $( ".description" ).removeClass( "past" );
     
-  };
+};
 
 // $( ".description" ).addClass( "past" );
 // $( ".description" ).addClass( "present" );
